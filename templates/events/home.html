@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body><center>
+<body>
+{% extends 'events/base.html' %}
+{% block content %}
+<center>
     <h1>hey {{ name }} events for {{ month }} {{ year }}</h1>
 
 {{ month_number }} <br/> <br/>
@@ -14,5 +17,6 @@ As of {{ time }}
     Copyright (c) {{ current_year }}
 
 </center>
+{% endblock %}
 </body>
 </html>
